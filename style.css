@@ -138,18 +138,9 @@ button {
   padding: var(--space-lg);
 }
 
-.item-details {
+.item-description {
   margin: var(--space-xl) 0;
-}
-
-.item-details * {
-  margin-bottom: var(--space-sm);
   font-size: var(--font-sm);
-}
-
-/* get last child of .item-details  */
-.item-details > *:last-child {
-  margin-bottom: 0;
 }
 
 .quantity-container {
