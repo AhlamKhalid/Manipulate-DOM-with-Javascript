@@ -7,6 +7,7 @@
 
 :root {
   --primary-color: #000;
+  --primary-color-rgb: 0, 0, 0;
   --secondary-color: #b5b5b5;
   --font-sm: 14px;
   --font-base: 16px;
@@ -61,18 +62,44 @@ button {
 /* item */
 .blur-container {
   min-height: 100vh;
+  padding: 40px 0 0 80px;
 }
 
 .blur-container.blur {
   filter: blur(5px);
 }
 
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: var(--font-base);
+}
+
+.items {
+  margin-top: var(--space-lg);
+}
+
 .item-container {
   width: 268px;
+  margin-right: var(--space-xl);
+  position: relative;
+}
+
+.sale {
+  position: absolute;
+  top: var(--space-sm);
+  left: var(--space-sm);
+  padding: var(--space-sm);
+  background-color: rgba(var(--primary-color-rgb), 0.7);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: var(--font-sm);
+  color: #fff;
 }
 
 .item-container .item-img {
   cursor: pointer;
+  height: 402px;
 }
 
 .item-info {
@@ -162,4 +189,10 @@ button {
   font-weight: bold;
   font-size: var(--font-base);
   padding: var(--space-sm);
+}
+
+.add-btn.notify {
+  background-color: #fff;
+  color: var(--primary-color);
+  text-decoration: underline;
 }
