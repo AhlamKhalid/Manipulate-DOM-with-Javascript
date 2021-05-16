@@ -14,7 +14,7 @@ In this project, I show how to work with DOM (Document Object Model) using Javas
 
 ### YouTube tutorial
 
-[Manipulate DOM with javascript]()
+[Manipulate DOM with javascript](https://youtu.be/gcLVZf-bjWI)
 
 ### Run
 
